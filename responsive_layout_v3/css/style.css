@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    
+  }
+
+ul 
+{
+    list-style: none;
+    padding-left: 0;
+}
+
+li
+{
+    font-size: 1rem;
+}
+
+body {
+    margin: 0 auto;                    
+    padding: 0;                 
+    width: 100%; 
+    max-width: 1024px;
+    font-family: "Roboto", Arial, Verdana;
+    font-weight: 400;
+    letter-spacing: .05em;
+    max-width: 100vh;
+    background-color: #eeeaeab6;
+  
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+  }
+
+nav
+{
+    padding: 0 25px;
+}
+
+h1, .main-nav 
+{
+    text-align: center;
+}
+  
+  .main-nav, .main-nav li
+{
+    width: 100%;
+}
+  
+
+  .main-nav 
+{
+    margin-top: 30px;
+}
+  
+  .main-nav li 
+{
+    padding: 10px 0;
+    margin: 5px auto;
+    background-color: #f9f7f7;
+}
+
+
+img
+{
+    height: auto;
+    max-width: 100%;
+}
+
+.prof-pic
+{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+p, h1, h2, h3
+{
+    text-align: center;
+}
+ h1,h2
+ {
+    text-transform: uppercase;
+ }
+
+ h2,h3,.top{
+    font-size: 1em;
+    font-weight: 500;
+ }
+.intro p
+{
+    padding: 1rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 75px;
+  }
+
+.bottom-nav
+{
+    display: none;
+}
+
+.mobile-nav
+{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+p
+{
+    font-weight: 250;
+}
+.full {
+  display: none;
+}
+
+main
+{
+    padding: 0;                
+    width: 100%;
+    background-color: #f6f4f4;
+    padding: 15px 3px;
+}
+
+.contact-info p, .intro
+{
+    color: rgb(98, 96, 96);
+}
+
+.contact-info
+{
+    padding-bottom: 20px;
+}
+
+hr {
+    border: 0.5px solid #ccc;
+    margin: 1em;
+}
+
+@media (min-width: 768px)
+{
+    .main-nav, .intro, .projects
+    {
+        display: flex;
+    
+    }
+
+    .main-nav li
+    {
+        background-color: transparent;
+    }
+
+    .intro
+    {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .prof-pic
+    {
+        max-width: 45%;
+        order: 1;
+    }
+
+    .projects {
+        flex-wrap: wrap;
+       
+    }
+    .projects figure
+    {
+        flex-basis: calc(50% - 100px);
+    }
+
+    .top 
+    {
+        display: none;
+    }
+      .full
+    {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+}
+
+@media (min-width: 1024px)
+{
+    
+    .main
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .main-nav
+    {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        align-items: center;
+    }
+
+    h1
+    {
+        font-size: 1.25em;
+        margin-top: 45px;     
+    }
+
+    .projects {
+        flex-wrap: wrap;
+        justify-content: space-around;
+       
+    }
+    .projects figure
+    {
+        flex-basis: calc(30% - 100px);
+        
+    }
+}
