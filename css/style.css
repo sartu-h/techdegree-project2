@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Work Sans", serif;
     color: rgb(72, 72, 72);
+    background-color: rgb(247, 242, 242);
 }
 
 .main {
@@ -21,8 +22,14 @@
     font-weight: 500;
 }
 
-.main, .intro, .contact-info, footer, .wrap-color{
-    background-color: rgb(233, 233, 233);
+main, #portfolio, .projects figure, .projects figure img, .projects figure h3, .projects figure p{
+    background-color: white;
+}
+
+main{
+    margin: 20px;
+    padding: 10px 10px 50px;
+    
 }
 
 .main a{
@@ -37,6 +44,10 @@
 .main a:visited {
     color: rgb(72, 72, 72);
 }
+
+.main a:hover, .footer-nav a:hover{
+    color: white;
+}
 .main-nav li {
     list-style: none;   
 }
@@ -50,7 +61,11 @@
     
 }
 
-p{
+p, .projects h3 {
+    font-size: 20px;
+}
+
+p {
     padding: 15px;
     font-weight: 300;
 }
@@ -60,7 +75,7 @@ p, #portfolio, .projects h3, #contact{
 }
 
 #portfolio, #contact{
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
@@ -87,7 +102,7 @@ footer{
     border-top: 1px solid rgb(193, 191, 191);
     padding: 20px;
     margin: 0 10px;
-    font-size: 10px;
+    font-size: 13px;
     display: flex;
     justify-content: space-between;
     
@@ -104,4 +119,102 @@ footer ul li{
 
 .full{
     display: none;
+}
+
+@media screen and (min-width: 768px) {
+    h1{
+        margin-top: 20px;
+    }
+    .main{
+        padding-bottom: 20px;
+    }
+    .main a{
+        background-color: rgb(247, 242, 242);;
+        font-weight: 400;
+        font-size: larger;
+    }
+
+    .main-nav, .intro, .projects, .footer-nav{    
+        display: flex;
+    }
+
+    .main-nav{
+        justify-content: space-around;
+        margin: 0 100px;
+    }
+
+    .intro p{
+        order: -1;
+    }
+
+    .prof-pic {
+        width: 40%;
+        padding: 10px;
+    }
+
+    .projects{
+        flex-wrap: wrap;
+    }
+
+    .projects figure{
+        flex-basis: 50%;
+    }
+    
+    #contact-summary{
+        padding: 15px 200px;
+    }
+
+    .full{
+        display: contents;
+    }
+
+    .top{
+        display: none;
+    }
+
+    .footer-nav {
+        justify-content: space-between;
+        gap: 20px; 
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    h1{
+        padding: 10px;
+    }
+
+    .main-nav a{
+        padding: 20px;
+    }
+
+    .main-nav{
+        margin: 0;
+    }
+
+    .intro p{
+        padding: 30px;
+        margin: 20px;
+        text-align: left;
+    }
+
+    .prof-pic{
+        margin: 30px;
+    }
+
+    .projects figure{
+        flex-basis: 33.333%;
+    }
+
+    #contact-summary{
+        padding: 15px 400px;
+    }
+
+
 }
