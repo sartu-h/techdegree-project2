@@ -22,6 +22,7 @@
     font-weight: 500;
 }
 
+/* background color for main section */
 main, #portfolio, .projects figure, .projects figure img, .projects figure h3, .projects figure p{
     background-color: white;
 }
@@ -45,6 +46,7 @@ main{
     color: rgb(72, 72, 72);
 }
 
+/* added hover for links */
 .main a:hover, .footer-nav a:hover{
     color: white;
 }
